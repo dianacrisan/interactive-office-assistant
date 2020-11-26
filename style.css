@@ -15,6 +15,21 @@ html {
     font-weight: 300;
     text-rendering: optimizeLegibility;
 }
+/* ----------------------------------------- */
+/* headings */
+/* ----------------------------------------- */
+h1{
+    font-size: 250%;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 180%;
+    text-align: center;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
 
 /* ----------------------------------------- */
 /* HEADER */
@@ -22,18 +37,23 @@ html {
 
 header {
     position: relative;
-    height: 30vh;
+    height: 100vh;
+    align-items: center;
     display: flex;
     flex-flow: column wrap;
+}
+
+.commands{
     background-image: linear-gradient(to right, #2193b0, #6dd5ed);
-    align-items: center;
+    height: 250px;
+    width: 100%;
 }
 
 .navigation {
     display: flex;
     flex-flow: row wrap;
     /* justify-content: flex-end; */
-
+    height: 30hv;
     list-style: none;
     margin: 0;
     justify-content: center;
@@ -58,14 +78,53 @@ header {
     transform: scale(1.1);
 }
 
-.greeting {
-    align-self: center;
-    margin-top: 90px;
-    font-size: 250%;
-    font-weight: 200;
-    transform: translate(0, 50%);
+.greeting{
+    position: relative;
+    text-align: center;
+    width: 60%;
+    transform: translate(0%, -50%);
     color: #fff;
     background-color: #e84393;
     padding: 2px;
     box-shadow: 0 30px 80px 10px rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+    word-spacing: 4px;
 }
+
+/*---------------- heading quote ------------------ */
+
+.heading-blockquote{
+  width:70%;
+  margin:90px auto 0px auto;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #2193b0;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+.heading-blockquote:before{
+  font-family:Arial;
+  content: "\201C";
+  color:#2193b0;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+.heading-blockquote:after{
+  content: '';
+}
+
+.heading-blockquote span{
+    display:block;
+    color:#333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top:1em;
+  }
+
+
