@@ -128,3 +128,25 @@ header {
   }
 
 
+
+/* ----------------------------------------- */
+/* SECTION WEEKLY STATS */
+/* ----------------------------------------- */
+
+.section-weekly-stats {
+    background-color: #EDEDED;
+    height: 500px;
+    width: 100%;
+}
+
+.stats-elements {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/* ----------------------------------------- */
+/* SECTION YOUR ACTIVITIES */
+/* ----------------------------------------- */
+
