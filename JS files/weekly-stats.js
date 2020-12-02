@@ -1,4 +1,7 @@
-function drawGraph( dataArr ){  
+var values = [ 5, 6, 8, 7, 5, 6, 1 ];  
+drawGraph(values);
+
+function drawGraph(array) {  
     var canvas = document.getElementById( "stats-chart-canvas" );  
     var context = canvas.getContext( "2d" );  
   
@@ -10,12 +13,12 @@ function drawGraph( dataArr ){
     var GRAPH_HEIGHT = 350;  
     var GRAPH_WIDTH = 450;  
   
-    var arrayLen = dataArr.length;  
+    var arrayLength = array.length;  
   
     var largest = 0;  
-    for( var i = 0; i < arrayLen; i++ ){  
-        if( dataArr[ i ] > largest ){  
-            largest = dataArr[ i ];  
+    for( var i = 0; i < arrayLength; i++ ){  
+        if( array[ i ] > largest ){  
+            largest = array[ i ];  
         }  
     }  
   
@@ -71,17 +74,39 @@ function drawGraph( dataArr ){
     context.lineJoin = "round";  
     context.strokeStyle = "black";  
   
-    context.moveTo( GRAPH_LEFT, ( GRAPH_HEIGHT - dataArr[ 0 ] / largest * GRAPH_HEIGHT ) + GRAPH_TOP );  
+    context.moveTo( GRAPH_LEFT, ( GRAPH_HEIGHT - array[ 0 ] / largest * GRAPH_HEIGHT ) + GRAPH_TOP );  
     // draw reference value for day of the week  
     context.fillText( "1", 15, GRAPH_BOTTOM + 25);  
-    for( var i = 1; i < arrayLen; i++ ){  
-        context.lineTo( GRAPH_RIGHT / arrayLen * i + GRAPH_LEFT, ( GRAPH_HEIGHT - dataArr[ i ] / largest * GRAPH_HEIGHT ) + GRAPH_TOP );  
+    for( var i = 1; i < arrayLength; i++ ){  
+        context.lineTo( GRAPH_RIGHT / arrayLength * i + GRAPH_LEFT, ( GRAPH_HEIGHT - array[ i ] / largest * GRAPH_HEIGHT ) + GRAPH_TOP );  
         // draw reference value for day of the week  
-        context.fillText( ( i + 1 ), GRAPH_RIGHT / arrayLen * i, GRAPH_BOTTOM + 25);  
+        context.fillText( ( i + 1 ), GRAPH_RIGHT / arrayLength * i, GRAPH_BOTTOM + 25);  
     }  
     context.stroke();  
 }   
-   
-// test graph  
-var testValues = [ 5, 6, 8, 7, 5, 6, 1 ];  
-drawGraph( testValues );
+
+function incEltNbr(id) {
+  elt = document.getElementById(id);
+  endNbr = Number(document.getElementById(id).innerHTML);
+  incNbrRec(0, endNbr, elt);
+}
+
+/*A recursive function to increase the number.*/
+var speed = 20;
+function incNbrRec(i, endNbr, elt) {
+  if (i <= endNbr) {
+    elt.innerHTML = i;
+    setTimeout(function() {             //Delay a bit before calling the function again.
+      incNbrRec(i + 1, endNbr, elt);
+    }, speed);
+  }
+}
+
+/*Function called on button click*/
+function increasingNumbers(){
+  incEltNbr("firstNumberStat");
+  incEltNbr("secondNumberStat");
+  incEltNbr("thirdNumberStat");
+  incEltNbr("fourthNumberStat");
+}
+

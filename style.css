@@ -147,6 +147,32 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+button{
+    outline:none;
+    background:none;
+    border:2px solid #2193b0;
+    padding:11px;
+    cursor:pointer;
+    height: 50px;
+    width: 100px;
+    align-content: center;
+  }
+  
+button:active{
+    background:#2193b0;
+    color:black;
+  }
+    
+
+.numbers {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-flow: column wrap;
 }
 
 

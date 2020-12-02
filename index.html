@@ -21,7 +21,9 @@
                 </ul>
             </div>
 
-            <div class="greeting"><h1>The modern office assistant</h1></div>
+            <div class="greeting">
+                <h1>The modern office assistant</h1>
+            </div>
 
             <blockquote class="heading-blockquote">
                 Whenever you are asked if you can do a job, tell 'em, 'Certainly I can!' 
@@ -35,15 +37,44 @@
             <h3>These are your weekly stats!</h3>
             <br>
             <div class="stats-elements">
-                <canvas id="stats-chart-canvas" width="550" height="450"></canvas>
-                <script src="JS files/weekly-stats.js" type="text/javascript"></script>
+
+                <div class="chart">
+                    <canvas id="stats-chart-canvas" width="550" height="450"></canvas>
+                    <script src="JS files/weekly-stats.js" type="text/javascript"></script>
+                </div>
+              
+                <div class="numbers">
+                    <div>
+                        <button onClick="increasingNumbers()">See stats</button>
+                    </div>
+                    <br>
+                    <div>
+                        <h6>Number of minutes online</h6>
+                        <p id="firstNumberStat">1342</p>
+                    </div>
+                    <br>
+                    <div>
+                        <h6>Number of new collaborators</h6>
+                        <p id="secondNumberStat">17</p>
+                    </div>
+                    <br>
+                    <div>
+                        <h6>Number of days until deadline</h6>
+                        <p id="thirdNumberStat">22</p>
+                    </div>
+                    <br>
+                    <div>
+                        <h6>Number of projects completed</h6>
+                        <p id="fourthNumberStat">109</p>
+                    </div>
+                </div>
             </div>
         </section>
 
 
         <section class="section-your-activities">
             <div>
-                This is another section
+
             </div>
         </section>
     </body>
