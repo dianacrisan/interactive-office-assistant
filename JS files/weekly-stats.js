@@ -92,7 +92,7 @@ function incEltNbr(id) {
 }
 
 /*A recursive function to increase the number.*/
-var speed = 20;
+var speed = 10;
 function incNbrRec(i, endNbr, elt) {
   if (i <= endNbr) {
     elt.innerHTML = i;

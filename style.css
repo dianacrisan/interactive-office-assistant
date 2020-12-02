@@ -139,7 +139,6 @@ header {
 
 .section-weekly-stats {
     background-color: #EDEDED;
-    height: 550px;
     width: 100%;
 }
 
@@ -169,12 +168,51 @@ button:active{
     
 
 .numbers {
+    margin-top: 20px;
     display: flex;
     text-align: center;
     flex-direction: column;
     flex-flow: column wrap;
 }
 
+.infobox {
+    /* box-shadow: 0 1px 1px rgba(75, 76, 78, 0.25),0 0 0 1px rgba(0, 0, 0, 0.08);
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: auto;
+    height: auto; */
+    display: flex;
+    text-align: center;
+    flex-flow: column wrap;
+    flex-direction: column;
+    width: 400px;
+    position: relative;
+    animation: dropAnimation 5s linear 2s infinite;
+    margin-bottom: 140px;
+}
+
+.infobox #infoboxTitle {
+    color: #2193b0;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.infobox #info {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@keyframes dropAnimation {
+    0% {top: 0px;}
+    50% {top: 150px;}
+    75% {top: 140px;}
+    100%{top: 0px;}
+}
 
 /* ----------------------------------------- */
 /* SECTION YOUR ACTIVITIES */
