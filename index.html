@@ -26,121 +26,129 @@
             </div>
 
             <blockquote class="heading-blockquote">
-                Whenever you are asked if you can do a job, tell 'em, 'Certainly I can!' 
-                Then get busy and find out how to do it.
+                Whenever you are asked if you can do a job, tell 'em, 'Certainly
+                I can!' Then get busy and find out how to do it.
                 <span>- Theodor Rosevelt</span>
             </blockquote>
         </header>
-        
-        <section class="section-weekly-stats">
-            <br>
-            <h3>These are your weekly stats!</h3>
-            <br>
-            <div class="stats-elements">
 
+        <section class="section weekly-stats">
+            <br />
+            <h2>These are your weekly stats!</h2>
+            <br />
+            <div class="stats-elements">
                 <div class="chart">
-                    <canvas id="stats-chart-canvas" width="550" height="450"></canvas>
-                    <script src="JS files/weekly-stats.js" type="text/javascript"></script>
+                    <canvas
+                        id="stats-chart-canvas"
+                        width="550"
+                        height="450"
+                    ></canvas>
+                    <script
+                        src="JS files/weekly-stats.js"
+                        type="text/javascript"
+                    ></script>
                 </div>
 
                 <div class="numbers">
                     <div>
                         <button onClick="increasingNumbers()">See stats</button>
                     </div>
-                    <br>
+                    <br />
                     <div>
                         <h6>Number of minutes online</h6>
                         <p id="firstNumberStat">1342</p>
                     </div>
-                    <br>
+                    <br />
                     <div>
                         <h6>Number of new collaborators</h6>
                         <p id="secondNumberStat">17</p>
                     </div>
-                    <br>
+                    <br />
                     <div>
                         <h6>Number of days until deadline</h6>
                         <p id="thirdNumberStat">22</p>
                     </div>
-                    <br>
+                    <br />
                     <div>
                         <h6>Number of projects completed</h6>
                         <p id="fourthNumberStat">109</p>
                     </div>
                 </div>
-                
+
                 <div class="infobox">
                     <div id="infoboxTitle">Next deadline!</div>
                     <div id="info">
-                        Your project's next deadline is 20th of December.<br>
-                        The project must be presented during the seminar.<br>
-                        Your partners for the project can be found in the Word 
-                        document attached to this week's meeting repository.<br>
+                        Your project's next deadline is 20th of December.<br />
+                        The project must be presented during the seminar.<br />
+                        Your partners for the project can be found in the Word
+                        document attached to this week's meeting repository.<br />
                         Please finish the project in time.
                     </div>
                 </div>
-                
             </div>
         </section>
 
-
-        <section class="section-your-activities">
-            <br>
-            <h3>Here you can see your activities!</h3>
-            <br>
+        <section class="section your-activities">
+            <br />
+            <h2>Here you can see your activities!</h2>
+            <br />
             <div class="activities-percentages">
-
                 <div class="single-chart">
                     <svg viewBox="0 0 36 36" class="circular-chart grey">
-                      <path class="circle-bg"
-                        d="M18 2.0845
+                        <path
+                            class="circle-bg"
+                            d="M18 2.0845
                           a 15.9155 15.9155 0 0 1 0 31.831
                           a 15.9155 15.9155 0 0 1 0 -31.831"
-                      />
-                      <path class="circle"
-                        stroke-dasharray="23, 100"
-                        d="M18 2.0845
+                        />
+                        <path
+                            class="circle"
+                            stroke-dasharray="23, 100"
+                            d="M18 2.0845
                           a 15.9155 15.9155 0 0 1 0 31.831
                           a 15.9155 15.9155 0 0 1 0 -31.831"
-                      />
-                      <text x="18" y="20.35" class="percentage">23%</text>
-                    </svg>
-                </div>
-                  
-                <div class="single-chart">
-                    <svg viewBox="0 0 36 36" class="circular-chart pink">
-                      <path class="circle-bg"
-                        d="M18 2.0845
-                          a 15.9155 15.9155 0 0 1 0 31.831
-                          a 15.9155 15.9155 0 0 1 0 -31.831"
-                      />
-                      <path class="circle"
-                        stroke-dasharray="86, 100"
-                        d="M18 2.0845
-                          a 15.9155 15.9155 0 0 1 0 31.831
-                          a 15.9155 15.9155 0 0 1 0 -31.831"
-                      />
-                      <text x="18" y="20.35" class="percentage">86%</text>
-                    </svg>
-                </div>
-                
-                <div class="single-chart">
-                    <svg viewBox="0 0 36 36" class="circular-chart blue">
-                      <path class="circle-bg"
-                        d="M18 2.0845
-                          a 15.9155 15.9155 0 0 1 0 31.831
-                          a 15.9155 15.9155 0 0 1 0 -31.831"
-                      />
-                      <path class="circle"
-                        stroke-dasharray="58, 100"
-                        d="M18 2.0845
-                          a 15.9155 15.9155 0 0 1 0 31.831
-                          a 15.9155 15.9155 0 0 1 0 -31.831"
-                      />
-                      <text x="18" y="20.35" class="percentage">58%</text>
+                        />
+                        <text x="18" y="20.35" class="percentage">23%</text>
                     </svg>
                 </div>
 
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart pink">
+                        <path
+                            class="circle-bg"
+                            d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path
+                            class="circle"
+                            stroke-dasharray="86, 100"
+                            d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="18" y="20.35" class="percentage">86%</text>
+                    </svg>
+                </div>
+
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart blue">
+                        <path
+                            class="circle-bg"
+                            d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path
+                            class="circle"
+                            stroke-dasharray="58, 100"
+                            d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="18" y="20.35" class="percentage">58%</text>
+                    </svg>
+                </div>
             </div>
 
             <div class="activities-info">
