@@ -228,7 +228,6 @@ button:active{
     justify-content: center;
     width: 100%;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
 }
 
 .single-chart {
@@ -279,6 +278,14 @@ button:active{
     font-family: sans-serif;
     font-size: 0.3em;
     text-anchor: middle;
+}
+
+.activities-info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 
