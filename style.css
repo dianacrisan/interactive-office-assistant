@@ -48,11 +48,16 @@ h3 {
 /* ----------------------------------------- */
 
 header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39), #e8439336),
+        url(/media/images/header-background.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
     position: relative;
     height: 100vh;
     align-items: center;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
 }
 
 .commands {
@@ -117,38 +122,33 @@ header {
 
 /*---------------- heading quote ------------------ */
 
-.heading-blockquote {
-    width: 70%;
-    margin: 200px auto 0px auto;
+blockquote {
+    color: white;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    line-height: 2;
+    padding: 2%;
     font-style: italic;
-    color: #555555;
-    padding: 1.2em 30px 1.2em 75px;
-    border-left: 8px solid #2193b0;
-    line-height: 1.6;
+    font-size: 2.5rem;
+    line-height: 145%;
     position: relative;
-    background: #ededed;
+    transform: translate(0, 30%);
+    width: 80%;
 }
 
-.heading-blockquote:before {
-    font-family: Arial;
-    content: '\201C';
-    color: #2193b0;
-    font-size: 4em;
+/* adding a " before*/
+blockquote:before {
     position: absolute;
-    left: 10px;
-    top: -10px;
-}
-
-.heading-blockquote:after {
-    content: '';
-}
-
-.heading-blockquote span {
+    content: '\201C';
+    font-size: 300px;
     display: block;
-    color: #333333;
-    font-style: normal;
-    font-weight: bold;
-    margin-top: 1em;
+    left: -3px;
+}
+
+cite {
+    display: block;
+    font-size: 90%;
+    margin-top: 5px;
 }
 
 /* ----------------------------------------- */
