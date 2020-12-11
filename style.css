@@ -316,6 +316,15 @@ button:active {
     margin-top: 10px;
 }
 
+#box1, #box2 {
+    float: left;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
 /* ----------------------------------------- */
 /* SECTION ADD ACTIVITY */
 /* ----------------------------------------- */
