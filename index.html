@@ -32,66 +32,11 @@
             </blockquote>
         </header>
 
-        <section class="section weekly-stats">
-            <br />
-            <h2>These are your weekly stats!</h2>
-            <br />
-            <div class="stats-elements">
-                <div class="chart">
-                    <canvas
-                        id="stats-chart-canvas"
-                        width="550"
-                        height="450"
-                    ></canvas>
-                    <script
-                        src="JS files/weekly-stats.js"
-                        type="text/javascript"
-                    ></script>
-                </div>
+        <section class="general-stats">  
+            <br>
+            <h2>These are some general stats!</h2>
+            <br>
 
-                <div class="numbers">
-                    <div>
-                        <button onClick="increasingNumbers()">See stats</button>
-                    </div>
-                    <br />
-                    <div>
-                        <h6>Number of minutes online</h6>
-                        <p id="firstNumberStat">1342</p>
-                    </div>
-                    <br />
-                    <div>
-                        <h6>Number of new collaborators</h6>
-                        <p id="secondNumberStat">17</p>
-                    </div>
-                    <br />
-                    <div>
-                        <h6>Number of days until deadline</h6>
-                        <p id="thirdNumberStat">22</p>
-                    </div>
-                    <br />
-                    <div>
-                        <h6>Number of projects completed</h6>
-                        <p id="fourthNumberStat">109</p>
-                    </div>
-                </div>
-
-                <div class="infobox">
-                    <div id="infoboxTitle">Next deadline!</div>
-                    <div id="info">
-                        Your project's next deadline is 20th of December.<br />
-                        The project must be presented during the seminar.<br />
-                        Your partners for the project can be found in the Word
-                        document attached to this week's meeting repository.<br />
-                        Please finish the project in time.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section your-activities">
-            <br />
-            <h2>Here you can see your activities!</h2>
-            <br />
             <div class="activities-percentages">
                 <div class="single-chart">
                     <svg viewBox="0 0 36 36" class="circular-chart grey">
@@ -157,9 +102,105 @@
                 <p>Efficiency scoring</p>
             </div>
             <br>
+            <br>
+        </section>          
+
+        <section class="section weekly-stats">
+
+            <h2>These are your weekly stats!</h2>
+            <br />
+            <div class="stats-elements">
+                <div class="chart">
+                    <canvas
+                        id="stats-chart-canvas"
+                        width="550"
+                        height="450"
+                    ></canvas>
+                    <script
+                        src="JS files/weekly-stats.js"
+                        type="text/javascript"
+                    ></script>
+                </div>
+
+                <div class="numbers">
+                    <div>
+                        <button onClick="increasingNumbers()">See stats</button>
+                    </div>
+                    <br />
+                    <div>
+                        <h6>Number of minutes online</h6>
+                        <p id="firstNumberStat">1342</p>
+                    </div>
+                    <br />
+                    <div>
+                        <h6>Number of new collaborators</h6>
+                        <p id="secondNumberStat">17</p>
+                    </div>
+                    <br />
+                    <div>
+                        <h6>Number of days until deadline</h6>
+                        <p id="thirdNumberStat">22</p>
+                    </div>
+                    <br />
+                    <div>
+                        <h6>Number of projects completed</h6>
+                        <p id="fourthNumberStat">109</p>
+                    </div>
+                </div>
+
+                <div class="infobox">
+                    <div id="infoboxTitle">Next deadline!</div>
+                    <div id="info">
+                        Your project's next deadline is 20th of December.<br />
+                        The project must be presented during the seminar.<br />
+                        Your partners for the project can be found in the Word
+                        document attached to this week's meeting repository.<br />
+                        Please finish the project in time.
+                    </div>
+                </div>
+            </div>
+
+            </section>
+
+        <section class="section your-activities">
+
+            <h2>Here you can manage your activities!</h2>
 
             <!-- drag and drop functionality -->
-            
+            <div class="stats-elements">
+                <form>
+                    <ul class="form-activities">
+                        <li>
+                            <label>Activity name:</label>
+                            <br>
+                            <input type="text" name="field1" placeholder="Activity" size="50px" /> 
+                        </li>
+                        <li>
+                            <label>Your e-mail: </label>
+                            <br>
+                            <input type="email" name="field2" size="50px"/>
+                        </li>
+                        <li>
+                            <label>Type of activity:</label>
+                            <br>
+                            <select name="field3" class="field-select">
+                            <option value="Urgent">Urgent</option>
+                            <option value="Personal">Personal</option>
+                            <option value="Group Activity">Team Activity</option>
+                            <option value="Optional">Optional</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>Your Message:</label>
+                            <br>
+                            <textarea name="field4" id="field4"></textarea>
+                        </li>
+                        <li>
+                            <input type="submit" value="Submit" onClick="addActivityToList()"/>
+                        </li>
+                    </ul>
+                </form>
+            </div>  
 
         </section>
 
