@@ -41,6 +41,7 @@ h3 {
 
 .section {
     padding: 60px 0px;
+    position: relative;
 }
 
 /* ----------------------------------------- */
@@ -156,7 +157,7 @@ cite {
 /* ----------------------------------------- */
 
 .weekly-stats {
-    background-color: #ededed;
+    background-color: white;
     /* width: 100%; */
 }
 
@@ -244,7 +245,7 @@ button:active {
 /* ----------------------------------------- */
 
 .your-activities {
-    background-color: white;
+    background-color: #ededed;
     width: 100%;
 }
 
