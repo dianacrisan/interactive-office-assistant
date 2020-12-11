@@ -8,6 +8,7 @@
             href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
             rel="stylesheet"
         />
+
         <title>Multimedia Project Home</title>
     </head>
     <body>
@@ -100,8 +101,8 @@
                 </div>
             </div>
 
-            <br>
-            <br>
+            <br />
+            <br />
             <h2>These are your weekly stats!</h2>
             <br />
 
@@ -160,44 +161,64 @@
         <section class="section your-activities">
             <!-- drag and drop functionality -->
             <div class="stats-elements">
-                <form>
-                    <ul class="form-activities">
-                        <li>
-                            <label>Activity name:</label>
-                            <br>
-                            <input type="text" name="field1" placeholder="Activity" size="50px" /> 
-                        </li>
-                        <li>
-                            <label>Your e-mail: </label>
-                            <br>
-                            <input type="email" name="field2" size="50px"/>
-                        </li>
-                        <li>
-                            <label>Type of activity:</label>
-                            <br>
-                            <select name="field3" class="field-select">
-                            <option value="Urgent">Urgent</option>
-                            <option value="Personal">Personal</option>
-                            <option value="Group Activity">Team Activity</option>
-                            <option value="Optional">Optional</option>
-                            </select>
-                        </li>
-                        <li>
-                            <label>Your Message:</label>
-                            <br>
-                            <textarea name="field4" id="field4"></textarea>
-                        </li>
-                        <li>
-                            <input type="submit" value="Submit" onClick="addActivityToList()"/>
-                        </li>
-                        <br>
-                    </ul>
-                </form>
+                <!-- here was the form previously -->
 
                 <div>
                     <p>Here I will implement drag&drop!</p>
                 </div>
-            </div> 
+            </div>
+            <!-- add an activity -->
+            <button class="btn add-activity">Add activity</button>
+            <div class="modal hidden">
+                <button class="btn close-modal">&times;</button>
+                <h1>Add a new activity</h1>
+                <form>
+                    <ul class="form-activities">
+                        <li>
+                            <label>Activity name:</label>
+                            <br />
+                            <input
+                                type="text"
+                                name="field1"
+                                placeholder="Activity"
+                                size="50px"
+                            />
+                        </li>
+                        <li>
+                            <label>Your e-mail: </label>
+                            <br />
+                            <input type="email" name="field2" size="50px" />
+                        </li>
+                        <li>
+                            <label>Type of activity:</label>
+                            <br />
+                            <select name="field3" class="field-select">
+                                <option value="Urgent">Urgent</option>
+                                <option value="Personal">Personal</option>
+                                <option value="Group Activity">
+                                    Team Activity
+                                </option>
+                                <option value="Optional">Optional</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>Your Message:</label>
+                            <br />
+                            <textarea name="field4" id="field4"></textarea>
+                        </li>
+                        <li>
+                            <input
+                                type="submit"
+                                value="Submit"
+                                onClick="addActivityToList()"
+                            />
+                        </li>
+                        <br />
+                    </ul>
+                </form>
+            </div>
+            <div class="overlay hidden"></div>
+            <script src="JS files/modal-add-activity.js"></script>
         </section>
 
         <section class="section-add-activity"></section>

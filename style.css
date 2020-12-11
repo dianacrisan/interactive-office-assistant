@@ -43,6 +43,23 @@ h3 {
     padding: 60px 0px;
 }
 
+button {
+    outline: none;
+    background: none;
+    border: 2px solid #2193b0;
+    padding: 11px;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    align-content: center;
+}
+
+button:hover,
+active {
+    background: #2193b0;
+    color: black;
+}
+
 /* ----------------------------------------- */
 /* HEADER */
 /* ----------------------------------------- */
@@ -151,7 +168,6 @@ cite {
     margin-top: 5px;
 }
 
-
 /* ----------------------------------------- */
 /* SECTION WEEKLY STATS */
 /* ----------------------------------------- */
@@ -211,29 +227,12 @@ cite {
     text-anchor: middle;
 }
 
-
 .stats-elements {
     display: flex;
     justify-content: center;
     /* width: 100%; */
     flex-flow: row wrap;
     justify-content: space-evenly;
-}
-
-button {
-    outline: none;
-    background: none;
-    border: 2px solid #2193b0;
-    padding: 11px;
-    cursor: pointer;
-    height: 50px;
-    width: 100px;
-    align-content: center;
-}
-
-button:active {
-    background: #2193b0;
-    color: black;
 }
 
 .numbers {
@@ -318,3 +317,48 @@ button:active {
 /* ----------------------------------------- */
 /* SECTION ADD ACTIVITY */
 /* ----------------------------------------- */
+
+/* add activity btn */
+.hidden {
+    display: none;
+}
+
+.modal {
+    position: fixed; /* Stay in place */
+    padding-top: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 6;
+    animation-name: animatemodal;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes animatemodal {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+.overlay {
+    /* position fix to affect all the sections !! */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    z-index: 5;
+}
