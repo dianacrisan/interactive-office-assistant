@@ -151,14 +151,15 @@ cite {
     margin-top: 5px;
 }
 
+
 /* ----------------------------------------- */
-/* SECTION GENERAL STATS */
+/* SECTION WEEKLY STATS */
 /* ----------------------------------------- */
 
-.general-stats {
-    background-color: #f2fdff;
+.weekly-stats {
+    background-color: white;
+    /* width: 100%; */
 }
-
 
 .single-chart {
     width: 33%;
@@ -210,23 +211,6 @@ cite {
     text-anchor: middle;
 }
 
-.activities-info {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-
-
-/* ----------------------------------------- */
-/* SECTION WEEKLY STATS */
-/* ----------------------------------------- */
-
-.weekly-stats {
-    background-color: #ededed;
-    /* width: 100%; */
-}
 
 .stats-elements {
     display: flex;
@@ -312,7 +296,7 @@ button:active {
 /* ----------------------------------------- */
 
 .your-activities {
-    background-color: white;
+    background-color: #ededed;
     width: 100%;
 }
 
