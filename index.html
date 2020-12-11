@@ -159,6 +159,10 @@
         </section>
 
         <section class="section your-activities">
+
+            <h2>Here you can manage your activities!</h2>
+            <script src="JS files/your-activities.js"></script>
+
             <!-- drag and drop functionality -->
             <div class="stats-elements">
                 <!-- here was the form previously -->
@@ -219,6 +223,43 @@
             </div>
             <div class="overlay hidden"></div>
             <script src="JS files/modal-add-activity.js"></script>
+                <div>
+                    <h3>IN PROGRESS</h3>
+                    <div id="box1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <p draggable="true" ondragstart="drag(event)" id="drag1">
+                            Call boss and ask for important papers
+                        </p>
+                        <p draggable="true" ondragstart="drag(event)" id="drag2">
+                            Buy printer ink
+                        </p>
+                        <p draggable="true" ondragstart="drag(event)" id="drag3">
+                            Implement controller in backend for Transportation Problem
+                        </p>
+                        <p draggable="true" ondragstart="drag(event)" id="drag4">
+                            Design navigation bar for webtech project
+                        </p>
+                        <p draggable="true" ondragstart="drag(event)" id="drag5">
+                            Remind colleagues of next deadline
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>COMPLETED</h3>
+                    <div id="box2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <p draggable="true" ondragstart="drag(event)" id="drag6">
+                            Complete salary excel sheet
+                        </p>
+                        <p draggable="true" ondragstart="drag(event)" id="drag7">
+                            Finish financing model
+                        </p>
+                        <p draggable="true" ondragstart="drag(event)" id="drag8">
+                            Update PC software
+                        </p>
+                    </div>
+                </div>
+
+            </div> 
         </section>
 
         <section class="section-add-activity"></section>
