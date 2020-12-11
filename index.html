@@ -158,45 +158,48 @@
         </section>
 
         <section class="section your-activities">
+
+            <h2>Here you can manage your activities!</h2>
+            <script src="JS files/your-activities.js"></script>
+
             <!-- drag and drop functionality -->
             <div class="stats-elements">
-                <form>
-                    <ul class="form-activities">
-                        <li>
-                            <label>Activity name:</label>
-                            <br>
-                            <input type="text" name="field1" placeholder="Activity" size="50px" /> 
-                        </li>
-                        <li>
-                            <label>Your e-mail: </label>
-                            <br>
-                            <input type="email" name="field2" size="50px"/>
-                        </li>
-                        <li>
-                            <label>Type of activity:</label>
-                            <br>
-                            <select name="field3" class="field-select">
-                            <option value="Urgent">Urgent</option>
-                            <option value="Personal">Personal</option>
-                            <option value="Group Activity">Team Activity</option>
-                            <option value="Optional">Optional</option>
-                            </select>
-                        </li>
-                        <li>
-                            <label>Your Message:</label>
-                            <br>
-                            <textarea name="field4" id="field4"></textarea>
-                        </li>
-                        <li>
-                            <input type="submit" value="Submit" onClick="addActivityToList()"/>
-                        </li>
-                        <br>
-                    </ul>
-                </form>
+                <div>
+                    <h3>IN PROGRESS</h3>
+                    <div id="box1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <p draggable="true" ondragstart="drag(event)" id="drag1">
+                            Call boss and ask for important papers
+                        </p>
+                        <p draggable="true" ondragstart="drag(event)" id="drag2">
+                            Buy printer ink
+                        </p>
+                        <p draggable="true" ondragstart="drag(event)" id="drag3">
+                            Implement controller in backend for Transportation Problem
+                        </p>
+                        <p draggable="true" ondragstart="drag(event)" id="drag4">
+                            Design navigation bar for webtech project
+                        </p>
+                        <p draggable="true" ondragstart="drag(event)" id="drag5">
+                            Remind colleagues of next deadline
+                        </p>
+                    </div>
+                </div>
 
                 <div>
-                    <p>Here I will implement drag&drop!</p>
+                    <h3>COMPLETED</h3>
+                    <div id="box2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <p draggable="true" ondragstart="drag(event)" id="drag6">
+                            Complete salary excel sheet
+                        </p>
+                        <p draggable="true" ondragstart="drag(event)" id="drag7">
+                            Finish financing model
+                        </p>
+                        <p draggable="true" ondragstart="drag(event)" id="drag8">
+                            Update PC software
+                        </p>
+                    </div>
                 </div>
+
             </div> 
         </section>
 
