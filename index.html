@@ -8,6 +8,11 @@
             href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
         <title>Multimedia Project Home</title>
     </head>
     <body>
@@ -100,8 +105,8 @@
                 </div>
             </div>
 
-            <br>
-            <br>
+            <br />
+            <br />
             <h2>These are your weekly stats!</h2>
             <br />
 
@@ -120,7 +125,13 @@
 
                 <div class="numbers">
                     <div>
-                        <button onClick="increasingNumbers()">See stats</button>
+                        <button
+                            onClick="increasingNumbers()"
+                            class="btn btn-big see-stats"
+                        >
+                            <ion-icon name="bar-chart-sharp"></ion-icon>
+                            Stats
+                        </button>
                     </div>
                     <br />
                     <div>
@@ -158,51 +169,154 @@
         </section>
 
         <section class="section your-activities">
-
             <h2>Here you can manage your activities!</h2>
-            <script src="JS files/your-activities.js"></script>
 
             <!-- drag and drop functionality -->
-            <div class="stats-elements">
+            <div class="drag-drop">
                 <div>
                     <h3>IN PROGRESS</h3>
-                    <div id="box1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                        <p draggable="true" ondragstart="drag(event)" id="drag1">
+                    <div
+                        id="box1"
+                        ondrop="drop(event)"
+                        ondragover="allowDrop(event)"
+                    >
+                        <p
+                            draggable="true"
+                            ondragstart="drag(event)"
+                            id="drag1"
+                        >
                             Call boss and ask for important papers
                         </p>
-                        <p draggable="true" ondragstart="drag(event)" id="drag2">
+                        <p
+                            draggable="true"
+                            ondragstart="drag(event)"
+                            id="drag2"
+                        >
                             Buy printer ink
                         </p>
-                        <p draggable="true" ondragstart="drag(event)" id="drag3">
-                            Implement controller in backend for Transportation Problem
+                        <p
+                            draggable="true"
+                            ondragstart="drag(event)"
+                            id="drag3"
+                        >
+                            Implement controller in backend for Transportation
+                            Problem
                         </p>
-                        <p draggable="true" ondragstart="drag(event)" id="drag4">
+                        <p
+                            draggable="true"
+                            ondragstart="drag(event)"
+                            id="drag4"
+                        >
                             Design navigation bar for webtech project
                         </p>
-                        <p draggable="true" ondragstart="drag(event)" id="drag5">
+                        <p
+                            draggable="true"
+                            ondragstart="drag(event)"
+                            id="drag5"
+                        >
                             Remind colleagues of next deadline
                         </p>
                     </div>
                 </div>
-
                 <div>
                     <h3>COMPLETED</h3>
-                    <div id="box2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                        <p draggable="true" ondragstart="drag(event)" id="drag6">
+                    <div
+                        id="box2"
+                        ondrop="drop(event)"
+                        ondragover="allowDrop(event)"
+                    >
+                        <p
+                            draggable="true"
+                            ondragstart="drag(event)"
+                            id="drag6"
+                        >
                             Complete salary excel sheet
                         </p>
-                        <p draggable="true" ondragstart="drag(event)" id="drag7">
+                        <p
+                            draggable="true"
+                            ondragstart="drag(event)"
+                            id="drag7"
+                        >
                             Finish financing model
                         </p>
-                        <p draggable="true" ondragstart="drag(event)" id="drag8">
+                        <p
+                            draggable="true"
+                            ondragstart="drag(event)"
+                            id="drag8"
+                        >
                             Update PC software
                         </p>
                     </div>
                 </div>
+            </div>
+            <!-- add an activity -->
 
-            </div> 
+            <button class="btn btn-big add-activity">
+                <ion-icon name="add-sharp"></ion-icon>
+                Add activity
+            </button>
+
+            <div class="modal hidden">
+                <button class="btn btn-small close-modal">
+                    <ion-icon name="close-sharp"></ion-icon>
+                </button>
+                <h3>Add a new activity</h3>
+                <form>
+                    <ul class="form-activities">
+                        <li>
+                            <label>Activity name:</label>
+                            <br />
+                            <input
+                                type="text"
+                                name="field1"
+                                id="activity-name"
+                                placeholder="Activity"
+                                size="50px"
+                            />
+                        </li>
+                        <li>
+                            <label>Your e-mail: </label>
+                            <br />
+                            <input type="email" name="field2" size="50px" />
+                        </li>
+                        <li>
+                            <label>Type of activity:</label>
+                            <br />
+                            <select name="field3" class="field-select">
+                                <option value="Urgent">Urgent</option>
+                                <option value="Personal">Personal</option>
+                                <option value="Group Activity">
+                                    Team Activity
+                                </option>
+                                <option value="Optional">Optional</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>Your Message:</label>
+                            <br />
+                            <textarea name="field4" id="message-box"></textarea>
+                        </li>
+                        <li>
+                            <input
+                                type="submit"
+                                value="Submit"
+                                id="submit"
+                                class="btn btn-small"
+                            />
+                        </li>
+                        <br />
+                    </ul>
+                </form>
+                <button class="btn btn-small speech-recognition">
+                    <ion-icon name="mic-sharp"></ion-icon>
+                </button>
+            </div>
+            <div class="overlay hidden"></div>
+            <script src="JS files/your-activities.js"></script>
+            <script src="JS files/modal-add-activity.js"></script>
+            <script src="JS files/speech-recognition.js"></script>
+            <script src="JS files/form-submit.js"></script>
+            <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
         </section>
-
-        <section class="section-add-activity"></section>
     </body>
 </html>
