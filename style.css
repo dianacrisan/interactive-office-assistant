@@ -21,6 +21,7 @@ body {
     font-size: 25px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    height: 100vh;
 }
 /* ----------------------------------------- */
 /* headings */
@@ -52,6 +53,7 @@ h2:after {
 
 h3 {
     text-align: center;
+    margin: 10px 0;
 }
 /* ----------------------------------------- */
 /* Reusable */
@@ -466,4 +468,143 @@ textarea {
 
 *:focus {
     outline: none;
+}
+
+/* ----------------------------------------- */
+/* SECTION ABOUT US */
+/* ----------------------------------------- */
+
+.about-us {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 85vh;
+    width: 100%;
+}
+
+/* slider  */
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* info cards */
+
+.card {
+    display: flex;
+    flex-flow: row;
+    max-width: 1000px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card__hero {
+    flex: 0 1 100%;
+}
+
+.card__img {
+    width: 300px;
+    height: auto;
+    display: block;
+    animation-name: roll;
+    animation-duration: 1s;
+    transition: 1s;
+}
+
+@keyframes roll {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card__message {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #ededed;
+    padding: 30px;
+}
+
+/* image effects */
+.first:hover {
+    filter: grayscale(100%);
+}
+
+.second:hover {
+    filter: sepia(100%);
+}
+
+.third:hover {
+    filter: saturate(2000%);
 }
