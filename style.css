@@ -122,12 +122,12 @@ ion-icon {
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.39), #e8439336),
-        url(/media/images/header-background.jpg);
+        url(/interactive-office-assistant/media/images/header-background.jpg);
     background-size: 100%;
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    height: 100vh;
+    height: auto;
     align-items: center;
     display: flex;
     flex-flow: column nowrap;
@@ -231,6 +231,7 @@ cite {
 .weekly-stats {
     background-color: white;
     /* width: 100%; */
+    height: auto;
 }
 
 .single-chart {
@@ -363,7 +364,7 @@ cite {
     justify-content: space-evenly;
     background-color: #ededed;
     width: 100%;
-    height: 60rem;
+    height: auto;
 }
 
 .drag-drop {
@@ -471,6 +472,35 @@ textarea {
 }
 
 /* ----------------------------------------- */
+/* SECTION WHAT'S NEW */
+/* ----------------------------------------- */
+
+
+.whats-new {
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.buttons-effects {
+    display: flex;
+    /* width: 100%; */
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.effect1, .effect2, .effect3 {
+    margin-top: 10px;
+}
+
+
+/* ----------------------------------------- */
 /* SECTION ABOUT US */
 /* ----------------------------------------- */
 
@@ -478,7 +508,7 @@ textarea {
     display: flex;
     flex-flow: column;
     align-items: center;
-    height: 85vh;
+    height: auto;
     width: 100%;
 }
 
