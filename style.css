@@ -146,6 +146,11 @@ header {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+    align-items: flex-start;
+}
+
+.commands img {
+    transform: translate(0, -27%);
 }
 
 .navigation {
@@ -513,6 +518,7 @@ video {
 /* ----------------------------------------- */
 
 .about-us {
+    background-color: #ededed;
     display: flex;
     flex-flow: column;
     align-items: center;
