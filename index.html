@@ -22,10 +22,22 @@
                     <img height="200px" src="media/images/logo.png" alt="" />
                 </div>
                 <ul class="navigation">
-                    <li><a href="#" class="nav__btn">Weekly stats</a></li>
-                    <li><a href="#" class="nav__btn">Your activities</a></li>
-                    <li><a href="#" class="nav__btn">Add activity</a></li>
-                    <li><a href="#" class="nav__btn">What's new?</a></li>
+                    <li>
+                        <a href="#section_one" class="nav__btn">Weekly stats</a>
+                    </li>
+                    <li>
+                        <a href="#section_two" class="nav__btn"
+                            >Your activities</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#section_three" class="nav__btn"
+                            >What's new?</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#section_four" class="nav__btn">About us</a>
+                    </li>
                 </ul>
                 <div class="space"></div>
             </div>
@@ -48,10 +60,9 @@
             <script src="JS files/nav-sound.js"></script>
         </header>
 
-        <section class="section weekly-stats">
+        <section id="section_one" class="section weekly-stats">
             <h2>These are your general stats!</h2>
             <br />
-
             <div class="activities-percentages">
                 <div class="single-chart">
                     <svg viewBox="0 0 36 36" class="circular-chart grey">
@@ -116,7 +127,6 @@
 
             <br />
             <br />
-            <h2>These are your weekly stats!</h2>
             <br />
 
             <div class="stats-elements">
@@ -133,16 +143,6 @@
                 </div>
 
                 <div class="numbers">
-                    <div>
-                        <button
-                            onClick="increasingNumbers()"
-                            class="btn btn-big see-stats"
-                        >
-                            <ion-icon name="bar-chart-sharp"></ion-icon>
-                            Stats
-                        </button>
-                    </div>
-                    <br />
                     <div>
                         <h6>Number of minutes online</h6>
                         <p id="firstNumberStat">1342</p>
@@ -162,6 +162,16 @@
                         <h6>Number of projects completed</h6>
                         <p id="fourthNumberStat">109</p>
                     </div>
+                    <br />
+                    <div>
+                        <button
+                            onClick="increasingNumbers()"
+                            class="btn btn-big see-stats"
+                        >
+                            <ion-icon name="bar-chart-sharp"></ion-icon>
+                            Stats
+                        </button>
+                    </div>
                 </div>
 
                 <div class="infobox">
@@ -177,7 +187,7 @@
             </div>
         </section>
 
-        <section class="section your-activities">
+        <section id="section_two" class="section your-activities">
             <h2>Here you can manage your activities!</h2>
 
             <!-- drag and drop functionality -->
@@ -332,7 +342,7 @@
             <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
         </section>
 
-        <section class="section whats-new">
+        <section id="section_three" class="section whats-new">
             <h2>What's new?</h2>
 
             <div class="videos">
@@ -345,7 +355,7 @@
             </div>
         </section>
 
-        <section class="section about-us">
+        <section id="section_four" class="section about-us">
             <h2>About us</h2>
             <!-- Slideshow container -->
             <div class="slideshow-container">
@@ -434,11 +444,10 @@
             <div class="links">
                 <div class="col">
                     <ul class="footer-nav">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">iOS App</a></li>
-                        <li><a href="#">Android App</a></li>
+                        <li><a href="#section_one">Weekly stats</a></li>
+                        <li><a href="#section_two">Your activities</a></li>
+                        <li><a href="#section_three">What's new?</a></li>
+                        <li><a href="#section_four">About us</a></li>
                     </ul>
                 </div>
                 <div class="col">
