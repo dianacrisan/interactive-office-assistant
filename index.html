@@ -321,6 +321,10 @@
                 </button>
             </div>
             <div class="overlay hidden"></div>
+            <audio id="dropAudio">
+                <source src="media/sounds/dropSound.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
             <script src="JS files/your-activities.js"></script>
             <script src="JS files/modal-add-activity.js"></script>
             <script src="JS files/speech-recognition.js"></script>
@@ -418,8 +422,12 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-
+            <audio id="rollAudio">
+                <source src="media/sounds/imgRollSound.wav" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
             <script src="JS files/slider.js"></script>
+            <script src="JS files/img-roll-sound.js"></script>
         </section>
 
         <footer>
