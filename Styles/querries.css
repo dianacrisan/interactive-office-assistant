@@ -1,0 +1,141 @@
+/* Tablets */
+@media only screen and (max-width: 768px) {
+    .btn {
+        font-size: 70%;
+    }
+    .commands {
+        height: 180px;
+    }
+
+    .navigation {
+        justify-content: space-between;
+    }
+
+    blockquote:before {
+        font-size: 150px;
+    }
+
+    .greeting {
+        font-size: 60%;
+        width: 100%;
+        margin: 2rem;
+    }
+
+    .heading-blockquote {
+        font-size: 90%;
+        transform: translate(0, 30%);
+        width: 90%;
+    }
+
+    .drag-drop {
+        font-size: 80%;
+    }
+
+    #box1,
+    #box2 {
+        width: 300px;
+    }
+
+    .links {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .col {
+        margin-top: 30px;
+    }
+
+    .card__hero {
+        align-items: center;
+        justify-content: center;
+        flex: 0 1 auto;
+    }
+
+    .card__message {
+        flex: 0 1 auto;
+    }
+}
+
+/* Phones */
+@media only screen and (max-width: 695px) {
+    .card {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Phones */
+@media only screen and (max-width: 426px) {
+    h2 {
+        font-size: 100%;
+    }
+
+    h3 {
+        font-size: 80%;
+    }
+
+    .greeting {
+        font-size: 40%;
+        transform: translate(0, -60%);
+    }
+
+    .heading-blockquote::before {
+        font-size: 100px;
+    }
+
+    .heading-blockquote {
+        font-size: 70%;
+        transform: translate(0, 10%);
+        width: 90%;
+    }
+
+    .space {
+        display: none;
+    }
+
+    .commands img {
+        height: 150px;
+    }
+
+    .commands {
+        font-size: 20px;
+        flex-flow: column;
+        align-items: center;
+        /* justify-content: space-around; */
+    }
+
+    .navigation {
+        transform: translate(0, -70%);
+        padding-bottom: 30px;
+    }
+
+    .activities-percentages {
+        justify-content: space-between;
+    }
+
+    canvas {
+        width: 300px;
+    }
+
+    .card__img {
+        width: 200px;
+    }
+
+    footer {
+        font-size: 20px;
+    }
+
+    .col ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .col li {
+        padding: 10px;
+        margin: 0;
+    }
+}
