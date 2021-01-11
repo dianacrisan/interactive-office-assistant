@@ -1,0 +1,18 @@
+{
+    "name" : "Interactive Office Assistant",
+    "short_name": "Office Assistant",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color":"black", 
+    "scope": ".", 
+    "description": "An interactive office assistant",
+    "icons": [
+        {
+            "src": "media/images/logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
