@@ -1,11 +1,11 @@
 {
     "name" : "Interactive Office Assistant",
     "short_name": "Office Assistant",
-    "start_url": ".",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "#fff",
     "theme_color":"black", 
-    "scope": ".", 
+    "scope": "/", 
     "description": "An interactive office assistant",
     "icons": [
         {
